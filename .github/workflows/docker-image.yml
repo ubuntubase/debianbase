@@ -20,9 +20,9 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ubuntubase/debianbase:$(date +%s) --tag ubuntubase/debianbase:bullseye-slim --tag ubuntubase/debianbase:latest
+      run: docker build . --file Dockerfile --tag ubuntubase/debianbase:$(date +%Y%m%d) --tag ubuntubase/debianbase:bullseye-slim --tag ubuntubase/debianbase:latest
     - name: Push the Docker image (1)
-      run: docker push ubuntubase/debianbase:$(date +%s)
+      run: docker push ubuntubase/debianbase:$(date +%Y%m%d)
     - name: Push the Docker image (2)
       run: docker push ubuntubase/debianbase:bullseye-slim
     - name: Push the docker image (3)
