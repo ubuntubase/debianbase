@@ -1,4 +1,5 @@
-FROM debian:buster-slim
+ARG VERSION
+FROM debian:$VERSION-slim
 
 # Improve build speed by specifying the fastly CDN for apt-repository
 ARG DEBIAN_FRONTEND=noninteractive
