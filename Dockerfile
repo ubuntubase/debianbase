@@ -1,6 +1,8 @@
 ARG VERSION
 FROM debian:$VERSION-slim
 
+ENV TZ=Europe/Amsterdam
+
 # Improve build speed by specifying the fastly CDN for apt-repository
 ARG DEBIAN_FRONTEND=noninteractive
 ENV APT_MIRROR=cdn-fastly.deb.debian.org
