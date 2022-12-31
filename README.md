@@ -5,7 +5,7 @@ Debian (base) images:
 - based on Debian slim images
 - with `ca-certificates` and `tzdata` installed
 - with the timezone set to `Europe/Amsterdam`
-- and all packages upgraded tot there latest versions (`apt-get upgrade`)
+- and all packages upgraded to their latest versions (`apt-get upgrade`)
 
 Available tags:
 
