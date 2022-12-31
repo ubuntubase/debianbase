@@ -48,6 +48,8 @@ jobs:
       with:
         context: .
         build-args: "VERSION=${{ matrix.version }}"
-        platforms: linux/amd64,linux/arm64
+        # Supported architectures base image: amd64, arm32v5 (ignored), arm32v7, arm64v8, i386, mips64le, ppc64le, riscv64, s390x (source: https://hub.docker.com/_/debian)
+        # List of valid platform identifiers: https://www.winters.nz/docker/cross-platform-github-actions/
+        platforms: linux/amd64,linux/arm/v7,linux/arm64,linux/386,linux/mips64le,linux/ppc64le,linux/riscv64,linux/s390x
         tags: ubuntubase/debianbase:${{ matrix.version }}-${{env.TODAY}},ubuntubase/debianbase:${{ matrix.version }},ubuntubase/debianbase:${{ matrix.version }}-latest
         push: true
