@@ -14,7 +14,7 @@ jobs:
   docker:
     strategy:
       matrix:
-        version: ["10", "11"]
+        version: ["10", "11", "12"]
     runs-on: ubuntu-latest
 
     steps:
