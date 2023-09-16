@@ -11,17 +11,18 @@ Available tags:
 
 - `10` --> [Debian buster (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=10)
 - `11` --> [Debian bullseye (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=11)
+- `13` --> [Debian bookworm (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=12)
 
 Use it like this:
 
 ```sh
-$ docker run -it --rm ubuntubase/debianbase:11 date
+$ docker run -it --rm ubuntubase/debianbase:12 date
 Sat Oct 29 22:15:08 CEST 2022
 ```
 
 You can override the timezone by overriding the TZ variable during container startup, like this:
 
 ```sh
-$ docker run -it --rm -e 'TZ=Europe/London' ubuntubase/debianbase:11 date
+$ docker run -it --rm -e 'TZ=Europe/London' ubuntubase/debianbase:12 date
 Sat Oct 29 21:15:08 BST 2022
 ```
