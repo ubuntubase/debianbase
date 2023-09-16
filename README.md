@@ -11,7 +11,7 @@ Available tags:
 
 - `10` --> [Debian buster (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=10)
 - `11` --> [Debian bullseye (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=11)
-- `13` --> [Debian bookworm (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=12)
+- `12` --> [Debian bookworm (base) image](https://hub.docker.com/r/ubuntubase/debianbase?tab=tags&page=1&name=12)
 
 Use it like this:
 
