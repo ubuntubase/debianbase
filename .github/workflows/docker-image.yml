@@ -33,8 +33,9 @@ jobs:
         # install: true
         platforms: linux/amd64,linux/arm64
 
+    # https://github.com/docker/login-action
     - name: Login to Docker Hub
-      uses: docker/login-action@v2
+      uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
@@ -43,6 +44,7 @@ jobs:
     - name: Set TODAY to current date
       run: echo "TODAY=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
+    # # https://github.com/docker/build-push-action
     - name: Build and push images
       uses: docker/build-push-action@v5
       with:
